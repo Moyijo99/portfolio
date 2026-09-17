@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Moyijo Bala — Data Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay"></div>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="#top" class="logo">MB<span class="dot">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#live">Live Data</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero container">
+    <p class="eyebrow">// data engineer</p>
+    <h1>Building pipelines that turn <span class="highlight">raw data</span> into decisions.</h1>
+    <p class="hero-sub">I design and build end-to-end data pipelines and analytics infrastructure — from Kafka streams to dbt-modeled warehouses — through production-style projects that simulate real-world data engineering challenges.</p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      <a href="Muhammad-Moyijo-Bala-CV.pdf" class="btn btn-link" download>Download Résumé ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">3</span><span class="stat-label">end-to-end pipelines shipped</span></div>
+      <div class="stat"><span class="stat-num">7</span><span class="stat-label">services in one Docker stack</span></div>
+      <div class="stat"><span class="stat-num">2024</span><span class="stat-label">building with data since</span></div>
+    </div>
+  </section>
+
+  <section id="about" class="section container">
+    <h2 class="section-title"><span class="section-num">01</span> About</h2>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a data engineer based in Abuja, Nigeria, with hands-on experience building end-to-end production-style data pipelines, ELT workflows, and analytics infrastructure. I'm proficient in Python, SQL, dbt, Apache Airflow, Kafka, and cloud data warehousing with BigQuery and ClickHouse.
+      </p>
+      <p class="about-text">
+        Rather than waiting for a job title to hand me the problems, I build them myself — each portfolio project is designed to simulate a real-world data engineering challenge, from streaming ingestion under burst load to schema drift in production DAGs. I hold a B.Eng in Computer Engineering from Nile University of Nigeria.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills" class="section container">
+    <h2 class="section-title"><span class="section-num">02</span> Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Languages</h3>
+        <ul><li>Python</li><li>SQL</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Data Engineering</h3>
+        <ul><li>Apache Kafka</li><li>Apache Airflow (Astronomer)</li><li>dbt (Core)</li><li>Great Expectations</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Warehousing</h3>
+        <ul><li>Google BigQuery</li><li>ClickHouse</li><li>PostgreSQL</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Visualisation</h3>
+        <ul><li>Metabase</li><li>Tableau</li><li>Matplotlib</li><li>Seaborn</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>DevOps &amp; Infra</h3>
+        <ul><li>Docker</li><li>Docker Compose</li><li>Git</li><li>GitHub</li></ul>
+      </div>
+      <div class="skill-card">
+        <h3>Other</h3>
+        <ul><li>REST APIs</li><li>ETL / ELT</li><li>Data Modelling</li><li>Data Quality</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section container">
+    <h2 class="section-title"><span class="section-num">03</span> Projects</h2>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-tag">Streaming</div>
+        <h3>Real-Time Event Tracking Pipeline</h3>
+        <p>A production-style streaming pipeline: a Python/Faker producer publishes synthetic user events to Kafka; a consumer ingests them into PostgreSQL with no data loss under burst load. An Airflow DAG orchestrates hourly ELT into ClickHouse, and dbt staging/mart models power dashboard-ready datasets in Metabase. Containerised as 7 services with Docker Compose for one-command local deployment.</p>
+        <ul class="tech-tags">
+          <li>Python</li><li>Kafka</li><li>PostgreSQL</li><li>Airflow</li><li>ClickHouse</li><li>dbt</li><li>Metabase</li><li>Docker</li>
+        </ul>
+        <a href="https://github.com/Moyijo99/realtime-tracker" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">Batch / ELT</div>
+        <h3>Abuja Weather Intelligence Pipeline</h3>
+        <p>A batch ingestion pipeline pulling real weather data from the Open-Meteo API into BigQuery, with schema validation via Great Expectations to catch drift before it reaches downstream models. dbt staging and mart layers apply consistent data contracts on top, orchestrated with daily Airflow runs on Astronomer.</p>
+        <ul class="tech-tags">
+          <li>Python</li><li>Open-Meteo API</li><li>BigQuery</li><li>dbt</li><li>Airflow</li><li>Great Expectations</li>
+        </ul>
+        <a href="https://github.com/Moyijo99/weatherdata" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+        <a href="#live" class="project-link project-link-secondary">See the live version below ↓</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-tag">ETL / Analytics</div>
+        <h3>ETL Pipeline for Sales Data Analysis</h3>
+        <p>An end-to-end ETL pipeline extracting sales data from CSV sources, applying Pandas transformations for aggregation and trend analysis, and loading cleaned data into PostgreSQL — with automated SQL-based reporting visualised in Tableau dashboards.</p>
+        <ul class="tech-tags">
+          <li>Python</li><li>Pandas</li><li>SQL</li><li>PostgreSQL</li><li>Tableau</li>
+        </ul>
+        <a href="https://github.com/Moyijo99" class="project-link" target="_blank" rel="noopener">View on GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="live" class="section container">
+    <h2 class="section-title"><span class="section-num">04</span> Live Data</h2>
+    <p class="section-lead">This isn't a screenshot. A scheduled pipeline actually runs, on its own, in the background — the same pattern behind the <a href="https://github.com/Moyijo99/weatherdata" target="_blank" rel="noopener">Abuja Weather Intelligence Pipeline</a> above, just running against this page instead of BigQuery.</p>
+
+    <div class="pipeline-steps">
+      <div class="pipeline-step"><span class="pipeline-step-num">1</span>Ingest — Open-Meteo API</div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step"><span class="pipeline-step-num">2</span>Classify — precipitation risk</div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step"><span class="pipeline-step-num">3</span>Publish — committed hourly via cron</div>
+      <div class="pipeline-arrow">→</div>
+      <div class="pipeline-step"><span class="pipeline-step-num">4</span>Serve — this page</div>
+    </div>
+
+    <div class="live-card" id="live-weather-card" aria-live="polite">
+      <p class="live-status">Loading latest pipeline output…</p>
+    </div>
+
+    <p class="live-footnote">
+      Runs hourly via a <a href="https://github.com/Moyijo99/portfolio/blob/main/.github/workflows/update-weather.yml" target="_blank" rel="noopener">GitHub Actions cron job</a> that calls
+      <a href="https://github.com/Moyijo99/portfolio/blob/main/scripts/fetch-weather.mjs" target="_blank" rel="noopener">this ingestion script</a> and commits the result — no server to keep alive, no database, just a scheduled job and a static file.
+    </p>
+  </section>
+
+  <section id="experience" class="section container">
+    <h2 class="section-title"><span class="section-num">05</span> Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Mar — Aug 2024</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Data Management &amp; Business Intelligence Intern <span class="timeline-company">@ Galaxy Backbone Ltd., Abuja</span></h3>
+          <p>Managed and validated organisational datasets across systems for downstream BI reporting. Used Python and SQL to automate SLA and budget preprocessing workflows previously handled manually in Excel, and collaborated with IT and network engineering teams to streamline pipelines and reduce report turnaround time.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jan — Mar 2021</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Intern <span class="timeline-company">@ Griot Studios, Abuja</span></h3>
+          <p>Assisted with data entry, digital database organisation, and documentation management for studio operations.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Jul — Dec 2020</span>
+        </div>
+        <div class="timeline-content">
+          <h3>Intern <span class="timeline-company">@ Cyberlogik Solutions, Abuja</span></h3>
+          <p>Supported data collection and internal reporting logistics, gaining early exposure to tech-driven business processes.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="education" class="section container">
+    <h2 class="section-title"><span class="section-num">06</span> Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-meta">
+          <span class="timeline-date">Nile University of Nigeria</span>
+        </div>
+        <div class="timeline-content">
+          <h3>B.Eng in Computer Engineering</h3>
+          <p>Abuja, Nigeria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section container">
+    <h2 class="section-title"><span class="section-num">07</span> Contact</h2>
+    <div class="contact-box">
+      <p>Open to new roles and interesting data problems. The fastest way to reach me is email.</p>
+      <div class="contact-links">
+        <a href="mailto:moyeedjo@gmail.com" class="btn btn-primary">moyeedjo@gmail.com</a>
+        <a href="https://linkedin.com/in/muhammadmoyijo-bala" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Moyijo99" class="btn btn-ghost" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> Muhammad Moyijo Bala. Built with plain HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
