@@ -1,15 +1,15 @@
 {
-  "fetchedAt": "2026-09-20T14:39:01.865Z",
+  "fetchedAt": "2026-09-20T18:09:09.820Z",
   "location": "Abuja, Nigeria",
   "coordinates": {
     "lat": 9.0765,
     "lon": 7.3986
   },
-  "temperatureC": 27.9,
-  "windSpeedKmh": 8.8,
+  "temperatureC": 24,
+  "windSpeedKmh": 3.6,
   "precipitationMm": 0,
-  "precipitationProbabilityPct": 87,
-  "conditions": "Partly cloudy",
+  "precipitationProbabilityPct": 75,
+  "conditions": "Overcast",
   "riskLevel": "High",
   "source": "open-meteo.com"
 }
