@@ -6,7 +6,7 @@
 <title>Muhammad Moyijo Bala — Data Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,13 +23,13 @@
       <li><a href="#live">Live Data</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#education">Education</a></li>
-      <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-actions">
       <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">
         <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
         <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
+      <a href="#contact" class="nav-cta">Contact</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -40,13 +40,37 @@
 <main id="top">
 
   <section class="hero container">
-    <p class="eyebrow">// data engineer</p>
-    <h1>Building pipelines that turn <span class="highlight">raw data</span> into decisions.</h1>
-    <p class="hero-sub">I design and build end-to-end data pipelines and analytics infrastructure — from Kafka streams to dbt-modeled warehouses — through production-style projects that simulate real-world data engineering challenges.</p>
-    <div class="hero-actions">
-      <a href="#projects" class="btn btn-primary">View Projects</a>
-      <a href="#contact" class="btn btn-ghost">Get in touch</a>
-      <a href="Muhammad-Moyijo-Bala-CV.pdf" class="btn btn-link" download>Download Résumé ↓</a>
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="accent-bar"></span>
+        <p class="eyebrow">// data engineer</p>
+        <h1>Building pipelines that turn <span class="highlight">raw data</span> into decisions.</h1>
+        <p class="hero-sub">I design and build end-to-end data pipelines and analytics infrastructure — from Kafka streams to dbt-modeled warehouses — through production-style projects that simulate real-world data engineering challenges.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Let's Talk</a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+          <a href="Muhammad-Moyijo-Bala-CV.pdf" class="btn btn-link" download>Download Résumé ↓</a>
+        </div>
+        <p class="follow-me-label">Follow me</p>
+        <div class="follow-me">
+          <a href="mailto:moyeedjo@gmail.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+          <a href="https://github.com/Moyijo99" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.2 10.2 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/muhammadmoyijo-bala" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.75h3.48V21H3.4V8.75Zm6.02 0h3.34v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.34V21h-3.48v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.42V8.75Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-frame">
+          <div class="photo-placeholder">MB</div>
+          <img src="profile.jpg" alt="Muhammad Moyijo Bala" onerror="this.style.display='none'">
+          <span class="quote-mark">"</span>
+        </div>
+      </div>
     </div>
     <div class="hero-stats">
       <div class="stat"><span class="stat-num">3</span><span class="stat-label">end-to-end pipelines shipped</span></div>
@@ -55,8 +79,22 @@
     </div>
   </section>
 
+  <div class="ticker">
+    <div class="ticker-track">
+      <span>Python</span><span class="ticker-dot">•</span>
+      <span>SQL</span><span class="ticker-dot">•</span>
+      <span>Apache Kafka</span><span class="ticker-dot">•</span>
+      <span>Apache Airflow</span><span class="ticker-dot">•</span>
+      <span>dbt</span><span class="ticker-dot">•</span>
+      <span>BigQuery</span><span class="ticker-dot">•</span>
+      <span>ClickHouse</span><span class="ticker-dot">•</span>
+      <span>Docker</span>
+    </div>
+  </div>
+
   <section id="about" class="section container">
-    <h2 class="section-title"><span class="section-num">01</span> About</h2>
+    <p class="section-eyebrow">— 01</p>
+    <h2 class="section-title">About</h2>
     <div class="about-grid">
       <p class="about-text">
         I'm a data engineer based in Abuja, Nigeria, with hands-on experience building end-to-end production-style data pipelines, ELT workflows, and analytics infrastructure. I'm proficient in Python, SQL, dbt, Apache Airflow, Kafka, and cloud data warehousing with BigQuery and ClickHouse.
@@ -68,7 +106,8 @@
   </section>
 
   <section id="skills" class="section container">
-    <h2 class="section-title"><span class="section-num">02</span> Skills</h2>
+    <p class="section-eyebrow">— 02</p>
+    <h2 class="section-title">Skills</h2>
     <div class="skills-grid">
       <div class="skill-card">
         <h3>Languages</h3>
@@ -98,7 +137,8 @@
   </section>
 
   <section id="projects" class="section container">
-    <h2 class="section-title"><span class="section-num">03</span> Projects</h2>
+    <p class="section-eyebrow">— 03</p>
+    <h2 class="section-title">Projects</h2>
     <div class="projects-grid">
 
       <article class="project-card">
@@ -136,7 +176,8 @@
   </section>
 
   <section id="live" class="section container">
-    <h2 class="section-title"><span class="section-num">04</span> Live Data</h2>
+    <p class="section-eyebrow">— 04</p>
+    <h2 class="section-title">Live Data</h2>
     <p class="section-lead">This isn't a screenshot. A scheduled pipeline actually runs, on its own, in the background — the same pattern behind the <a href="https://github.com/Moyijo99/weatherdata" target="_blank" rel="noopener">Abuja Weather Intelligence Pipeline</a> above, just running against this page instead of BigQuery.</p>
 
     <div class="pipeline-steps">
@@ -160,7 +201,8 @@
   </section>
 
   <section id="experience" class="section container">
-    <h2 class="section-title"><span class="section-num">05</span> Experience</h2>
+    <p class="section-eyebrow">— 05</p>
+    <h2 class="section-title">Experience</h2>
     <div class="timeline">
 
       <div class="timeline-item">
@@ -197,7 +239,8 @@
   </section>
 
   <section id="education" class="section container">
-    <h2 class="section-title"><span class="section-num">06</span> Education</h2>
+    <p class="section-eyebrow">— 06</p>
+    <h2 class="section-title">Education</h2>
     <div class="timeline">
       <div class="timeline-item">
         <div class="timeline-meta">
@@ -212,7 +255,8 @@
   </section>
 
   <section id="contact" class="section container">
-    <h2 class="section-title"><span class="section-num">07</span> Contact</h2>
+    <p class="section-eyebrow">— 07</p>
+    <h2 class="section-title">Contact</h2>
     <div class="contact-box">
       <p>Open to new roles and interesting data problems. The fastest way to reach me is email.</p>
       <div class="contact-links">
@@ -226,8 +270,20 @@
 </main>
 
 <footer class="site-footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Muhammad Moyijo Bala. Built with plain HTML, CSS &amp; JS.</p>
+  <div class="container footer-inner">
+    <p class="footer-name">Muhammad Moyijo Bala</p>
+    <div class="footer-social">
+      <a href="mailto:moyeedjo@gmail.com" aria-label="Email" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+      </a>
+      <a href="https://github.com/Moyijo99" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.2c0 4.5 2.87 8.32 6.84 9.67.5.1.68-.22.68-.49 0-.24-.01-.87-.01-1.71-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.31.1-2.73 0 0 .84-.28 2.75 1.05a9.3 9.3 0 0 1 2.5-.35c.85 0 1.71.12 2.5.35 1.91-1.33 2.75-1.05 2.75-1.05.55 1.42.2 2.47.1 2.73.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.79-4.57 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.2 10.2 0 0 0 22 12.2C22 6.58 17.52 2 12 2Z"/></svg>
+      </a>
+      <a href="https://linkedin.com/in/muhammadmoyijo-bala" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a1.94 1.94 0 1 1-3.88 0 1.94 1.94 0 0 1 3.88 0ZM3.4 8.75h3.48V21H3.4V8.75Zm6.02 0h3.34v1.68h.05c.47-.88 1.6-1.8 3.3-1.8 3.53 0 4.18 2.32 4.18 5.34V21h-3.48v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V21H9.42V8.75Z"/></svg>
+      </a>
+    </div>
+    <p class="footer-tagline">&copy; <span id="year"></span> Built with plain HTML, CSS &amp; JS.</p>
   </div>
 </footer>
 

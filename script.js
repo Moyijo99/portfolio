@@ -2,18 +2,26 @@
   const root = document.documentElement;
   const toggle = document.getElementById('theme-toggle');
   const stored = localStorage.getItem('theme');
-  const prefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+  }
 
   if (stored) {
-    root.setAttribute('data-theme', stored);
-  } else if (prefersLight) {
-    root.setAttribute('data-theme', 'light');
+    applyTheme(stored);
+  } else if (prefersDark) {
+    applyTheme('dark');
   }
 
   toggle.addEventListener('click', () => {
-    const current = root.getAttribute('data-theme') === 'light' ? 'light' : 'dark';
-    const next = current === 'light' ? 'dark' : 'light';
-    root.setAttribute('data-theme', next);
+    const current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    applyTheme(next);
     localStorage.setItem('theme', next);
   });
 
