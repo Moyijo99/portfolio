@@ -391,19 +391,28 @@ body {
 }
 
 .ticker-track {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 14px;
-  font-family: var(--mono);
-  font-size: 0.85rem;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--text-faint);
+  gap: 10px;
   padding: 0 24px;
   flex-wrap: wrap;
 }
 
-.ticker-dot {
+.tech-pill {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text);
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 7px 14px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.tech-pill:hover {
+  border-color: var(--accent);
   color: var(--accent);
 }
 
