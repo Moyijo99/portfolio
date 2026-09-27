@@ -83,15 +83,17 @@ body {
 }
 
 .logo {
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
   color: var(--text);
   text-decoration: none;
-  letter-spacing: -0.01em;
 }
 
-.logo .dot { color: var(--accent); }
+.logo-mark {
+  width: 46px;
+  height: auto;
+  color: var(--text);
+}
 
 .nav-links {
   display: flex;
@@ -306,13 +308,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--display);
-  font-weight: 700;
-  font-size: 4.5rem;
+  padding: 15%;
   color: var(--text-faint);
   background:
     repeating-linear-gradient(135deg, transparent, transparent 18px, var(--border) 18px, var(--border) 19px),
     var(--bg-card);
+}
+
+.photo-placeholder svg {
+  width: 100%;
+  height: auto;
+  color: var(--text-faint);
 }
 
 .quote-mark {

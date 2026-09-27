@@ -38,6 +38,15 @@
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  document.querySelectorAll('[data-inline-svg]').forEach(async (el) => {
+    try {
+      const res = await fetch(el.dataset.inlineSvg);
+      if (res.ok) el.innerHTML = await res.text();
+    } catch (err) {
+      /* leave placeholder empty if the asset can't be fetched */
+    }
+  });
+
   function relativeTime(iso) {
     const diffMs = Date.now() - new Date(iso).getTime();
     const mins = Math.round(diffMs / 60000);
